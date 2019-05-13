@@ -19,3 +19,13 @@ db.sequelize = sequelize
 db.Sequelize = Sequelize
 
 module.exports = db
+
+// module.exports = {
+//     'connection':{
+//      'host':'localhost',
+//      'user':'root1',
+//      'password':''
+//     },
+//     'database':'New',
+//     'user_table':'Register'
+//    }
