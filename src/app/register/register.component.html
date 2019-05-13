@@ -1,0 +1,61 @@
+<div class="container">
+<h4 class="mb-3 mt-4">Registration Form</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">User name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Position</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Please fill in this area.
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+        <label for="firstName">Company Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+        <div class="invalid-feedback">
+            Please fill in this area
+        </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="firstName">Company Registration No</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Please fill in this area
+            </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="Malaysia.." required>
+          <div class="invalid-feedback">
+              Please fill in this area
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="firstName">File Upload : </label>
+          <!-- <input type="file" id="myFile"> -->
+          <input type="file" name="name" multiple>
+        </div>
+
+        <div class="mb-3">
+          <label class="mr-2">Department : </label>
+          <input type="radio" value="HR"> Human Resource
+          <input type="radio" value="IT"> Information Technology
+          <input type="radio" value="ACC"> Account / Finance
+        </div>
+
+        <button class="btn btn-danger m-3"> Cancel </button>
+        <button class="btn btn-success"> Submit </button>
+
+      </form>
+    </div>
