@@ -43,7 +43,7 @@ users.post('/register', (req, res) => {
     })
 })
 
-users.post('/login', (req, res) => {
+users.post('/home', (req, res) => {
   User.findOne({
     where: {
       compRegNo: req.body.compRegNo,
@@ -65,7 +65,7 @@ users.post('/login', (req, res) => {
     })
 })
 
-users.get('/profile', (req, res) => {
+users.get('/home', (req, res) => {
   var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)
 
   User.findOne({

@@ -51,7 +51,7 @@ INSERT INTO `CompReg` (`CompName`, `CompPic`, `CompRegNo`, `Address`, `CompCert`
 -- Table structure for table `user`
 --
 
-CREATE TABLE `user` (
+CREATE TABLE `users` (
   `CompRegNo` varchar(25) NOT NULL,
   `Password` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
