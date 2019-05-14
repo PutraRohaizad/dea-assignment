@@ -1,6 +1,6 @@
 {
-  "/users": {
-    "target": "https://localhost:3000",
+  "/Users": {
+    "target": "https://127.0.0.1:3000",
     "secure": false
   }
 }

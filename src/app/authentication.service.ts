@@ -84,8 +84,8 @@ export class AuthenticationService {
     return request
   }
 
-  public profile(): Observable<any> {
-    return this.http.get(`/users/profile`, {
+  public home(): Observable<any> {
+    return this.http.get(`/users/home`, {
       headers: { Authorization: ` ${this.getToken()}` }
     })
   }

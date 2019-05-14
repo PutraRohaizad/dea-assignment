@@ -17,6 +17,6 @@ app.use("./Users", Users)
 
 app.listen(port, function()
 {
-    console.log("Server is running on PORT" + port)
+    console.log("Server is running on PORT : " + port)
 })
 
