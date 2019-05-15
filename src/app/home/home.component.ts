@@ -10,10 +10,10 @@ export class HomeComponent {
 
   details: UserDetails
 
-  constructor(private auth: AuthenticationService) {}
+  constructor(private auth: AuthenticationService){ }
 
   ngOnInit() {
-    this.auth.profile().subscribe(
+    this.auth.home().subscribe(
       user => {
         this.details = user
       },

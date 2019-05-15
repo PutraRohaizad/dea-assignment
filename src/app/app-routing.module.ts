@@ -3,9 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
-import { CanActivate } from '@angular/router/src/utils/preactivation';
 import { AuthGuardService } from './auth-guard.service';
-import { FormsModule } from '@angular/forms';
 
 
 const routes: Routes = [

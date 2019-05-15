@@ -11,9 +11,13 @@ app.use
     bodyParser.urlencoded({extended:false})
 )
 
+// app.get('/',function (req,res){
+//     res.sendFile(__dirname + "/src/index.html")
+// })
+
 var Users = require("./routes/Users")
 
-app.use("./Users", Users)
+app.use("/users", Users)
 
 app.listen(port, function()
 {
