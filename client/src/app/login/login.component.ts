@@ -8,8 +8,8 @@ import { Router } from '@angular/router'
 export class LoginComponent {
   credentials: TokenPayload = {
     id: 0,
-    first_name: '',
-    last_name: '',
+    company_name: '',
+    company_pic: 0,
     email: '',
     password: ''
   }
