@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize')
 const db = {}
+const mysql = require('mysql2')
 const sequelize = new Sequelize('nodejs_login', 'root', 'root', {
   host: 'localhost',
   dialect: 'mysql',

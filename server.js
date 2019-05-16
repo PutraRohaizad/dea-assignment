@@ -3,7 +3,7 @@ var cors = require('cors')
 var bodyParser = require('body-parser')
 var app = express()
 var port = process.env.PORT || 3000
-const mysql = require('mysql2')
+//const mysql = require('mysql2')
 
 app.use(bodyParser.json())
 app.use(cors())
