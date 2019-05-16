@@ -7,9 +7,12 @@ import { Router } from '@angular/router'
 export interface UserDetails {
   id: number
   company_name: string
-  company_pic: number
-  email: string
+  company_pic: string
+  register_no: string
   password: string
+  address: string
+  company_cert : any
+  departments: any
   exp: number
   iat: number
 }
@@ -21,9 +24,12 @@ interface TokenResponse {
 export interface TokenPayload {
   id: number
   company_name: string
-  company_pic: number
-  email: string
+  company_pic: string
+  register_no: string
   password: string
+  address: string
+  company_cert: string
+  departments: string
 }
 
 @Injectable()

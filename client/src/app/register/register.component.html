@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-6 mt-5 mx-auto">
       <form (submit)="register()">
-        <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+        <h1 class="h3 mb-3 font-weight-normal">Registration page</h1>
         <div class="form-group">
           <label for="name">Company Name</label>
           <input type="text" class="form-control" name="company_name" placeholder="Enter your company name" [(ngModel)]="credentials.company_name">
@@ -13,42 +13,44 @@
         </div>
         <div class="form-group">
           <label for="regno">Company Registration No.</label>
-          <input type="text" class="form-control" name="company_regno" placeholder="Enter company registration number" [(ngModel)]="credentials.company_regno">
-        </div>
-
-        <div class="form-group">
-          <label for="address">Company Address</label>
-          <input type="text" class="form-control" name="address" placeholder="Enter company address" [(ngModel)]="credentials.company_address">
-        </div>
-        <div class="form-group">
-          <label for="cert">Company Certificate</label>
-          <input type="file" class="form-control" name="company_cert" placeholder="Choose file." [(ngModel)]="credentials.company_cert">
-        </div>
-
-        <div class="form-group">
-          <label for="area">Company Area</label> <br>
-          
-          <input type="radio" class="" name="area1" value="hr" [(ngModel)]="credentials.hr"> Human Resources<br>
-          <input type="radio" class="" name="area2" value="engineering" [(ngModel)]="credentials.eng"> Engineering<br>
-          <input type="radio" class="" name="area3" value="account" [(ngModel)]="credentials.account"> Accountancy<br>
-          <input type="radio" class="" name="area4" value="security" [(ngModel)]="credentials.security"> Security<br>
-
+          <input type="text" class="form-control" name="register_no" placeholder="Enter company registration number" [(ngModel)]="credentials.register_no">
         </div>
 
         <div class="form-group">
           <label for="password">Password</label>
           <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="credentials.password">
         </div>
-        <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
-        <button type="cancel" class="btn btn-lg btn-primary btn-block">Cancel</button>
 
+        <div class="form-group">
+          <label for="address">Company Address</label>
+          <input type="text" class="form-control" name="address" placeholder="Enter company address" [(ngModel)]="credentials.address">
+        </div>
+        <div class="form-group">
+          <label for="cert">Company Certificate : </label>
+          <input type="file" class="m-2" name="company_cert" placeholder="Choose file.." [(ngModel)]="credentials.company_cert">
+        </div>
+
+        <div class="form-group">
+          <label for="area">Departments</label> <br>
+          
+          <input type="radio" class="" name="area1" value="hr" [(ngModel)]="credentials.departments"> Human Resources<br>
+          <input type="radio" class="" name="area2" value="engineering" [(ngModel)]="credentials.departments"> Engineering<br>
+          <input type="radio" class="" name="area3" value="account" [(ngModel)]="credentials.departments"> Accountancy<br>
+          <input type="radio" class="" name="area4" value="security" [(ngModel)]="credentials.departments"> Security<br>
+
+        </div>
+
+        <div class="float-right mb-3">
+        <button type="submit" class="btn btn-danger mr-2">Cancel</button>
+        <button type="cancel" class="btn btn-primary" rout>Submit</button>
+        </div>
       </form>
     </div>
   </div>
 </div>
 
 <!-- New registration page -->
-
+<!-- 
  <div class="container">
       <h4 class="mb-3 mt-4">Registration Form</h4>
             <form class="needs-validation" novalidate (submit)="register()">
@@ -115,4 +117,4 @@
               <button class="btn btn-success"> Submit </button>
       
             </form>
-          </div>
+          </div> -->

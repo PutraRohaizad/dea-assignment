@@ -9,21 +9,26 @@ module.exports = db.sequelize.define(
       primaryKey: true,
       autoIncrement: true
     },
-    first_name: {
+    company_name: {
       type: Sequelize.STRING
     },
-    last_name: {
+    company_pic: {
       type: Sequelize.STRING
     },
-    email: {
+    register_no: {
       type: Sequelize.STRING
     },
     password: {
       type: Sequelize.STRING
     },
-    created: {
-      type: Sequelize.DATE,
-      defaultValue: Sequelize.NOW
+    address: {
+      type: Sequelize.STRING
+    },
+    company_cert: {
+      type: Sequelize.STRING
+    },
+    departments: {
+      type: Sequelize.STRING
     }
   },
   {

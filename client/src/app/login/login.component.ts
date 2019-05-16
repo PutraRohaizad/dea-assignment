@@ -8,10 +8,13 @@ import { Router } from '@angular/router'
 export class LoginComponent {
   credentials: TokenPayload = {
     id: 0,
-    company_name: '',
-    company_pic: 0,
-    email: '',
-    password: ''
+    company_name: "",
+    company_pic: "",
+    register_no: "",
+    password: "",
+    address: "",
+    company_cert: "",
+    departments: "",
   }
 
   constructor(private auth: AuthenticationService, private router: Router) {}
