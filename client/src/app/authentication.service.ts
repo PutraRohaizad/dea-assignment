@@ -6,8 +6,8 @@ import { Router } from '@angular/router'
 
 export interface UserDetails {
   id: number
-  first_name: string
-  last_name: string
+  company_name: string
+  company_pic: number
   email: string
   password: string
   exp: number
@@ -20,8 +20,8 @@ interface TokenResponse {
 
 export interface TokenPayload {
   id: number
-  first_name: string
-  last_name: string
+  company_name: string
+  company_pic: number
   email: string
   password: string
 }
