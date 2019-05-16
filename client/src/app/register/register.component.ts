@@ -10,7 +10,8 @@ export class RegisterComponent {
     id: 0,
     company_name: "",
     company_pic: 0,
-    email: "",
+    company_regno: "",
+    address: "",
     password: ""
   };
 
