@@ -6,6 +6,7 @@ import { Router } from '@angular/router'
 
 //declaration on types..
 export interface UserDetails {
+  exp: number;
   id: number
   company_name: string
   company_pic: number
