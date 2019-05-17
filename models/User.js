@@ -38,12 +38,13 @@ module.exports = db.sequelize.define(
       primaryKey: true,
       autoIncrement: true
     },
-    first_name: {
+    company_name: {
       type: Sequelize.STRING
     },
-    last_name: {
+    company_pic: {
       type: Sequelize.STRING
     },
+
     register_no: {
       type: Sequelize.STRING
     },

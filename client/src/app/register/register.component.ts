@@ -17,10 +17,12 @@ export class RegisterComponent {
     // departments: "",
 
     id: 0,
+
     first_name: '',
     last_name: '',
     register_no: '',
     password: ''
+    
   };
 
   constructor(private auth: AuthenticationService, private router: Router) {}

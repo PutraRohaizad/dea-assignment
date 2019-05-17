@@ -4,7 +4,9 @@ import { Observable, of } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { Router } from '@angular/router'
 
+//declaration on types..
 export interface UserDetails {
+<<<<<<< HEAD
   // id: number
   // company_name: string
   // company_pic: string
@@ -23,6 +25,7 @@ export interface UserDetails {
   password: string
   exp: number;
   iat: number
+
 }
 
 interface TokenResponse {
@@ -40,12 +43,20 @@ export interface TokenPayload {
   // departments: any
 
   id: number
+<<<<<<< HEAD
   first_name: string
   last_name: string
   register_no: string
   password: string
   // exp: number
   // iat: number
+=======
+  company_name: string
+  company_pic: number
+  company_regno: string
+  password: string
+  address: string
+>>>>>>> 419af5c1abb3694239527a2b76ab00703ec79443
 }
 
 @Injectable()
