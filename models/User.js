@@ -30,18 +30,15 @@ module.exports = db.sequelize.define(
     // departments: {
     //   type: Sequelize.STRING
 
-
-
-
     id: {
       type: Sequelize.INTEGER,
       primaryKey: true,
       autoIncrement: true
     },
-    first_name: {
+    company_name: {
       type: Sequelize.STRING
     },
-    last_name: {
+    company_pic: {
       type: Sequelize.STRING
     },
     register_no: {
@@ -50,10 +47,21 @@ module.exports = db.sequelize.define(
     password: {
       type: Sequelize.STRING
     },
-    created: {
-      type: Sequelize.DATE,
-      defaultValue: Sequelize.NOW
-    }
+    company_address: {
+      type: Sequelize.STRING
+    },
+    company_cert: {
+      type: Sequelize.STRING
+    },
+    company_depart: {
+      type: Sequelize.STRING
+    },
+
+
+    // created: {
+    //   type: Sequelize.DATE,
+    //   defaultValue: Sequelize.NOW
+    // }
   },
   {
     timestamps: false

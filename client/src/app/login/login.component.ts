@@ -18,10 +18,13 @@ export class LoginComponent {
     // departments: "",
 
     id: 0,
-    first_name: '',
-    last_name: '',
+    company_name: '',
+    company_pic: '',
     register_no: '',
-    password: ''
+    password: '',
+    company_address: '',
+    company_cert: '',
+    company_depart: '',
 
   
   }

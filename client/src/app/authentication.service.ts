@@ -6,22 +6,15 @@ import { Router } from '@angular/router'
 
 //declaration on types..
 export interface UserDetails {
-  // id: number
-  // company_name: string
-  // company_pic: string
-  // register_no: string
-  // password: string
-  // address: string
-  // company_cert : any
-  // departments: any
-  // exp: number
-  // iat: number
 
   id: number
-  first_name: string
-  last_name: string
+  company_name: string
+  company_pic: string
   register_no: string
   password: string
+  company_address: string
+  company_cert: string
+  company_depart: string
   exp: number;
   iat: number
 
@@ -32,23 +25,24 @@ interface TokenResponse {
 }
 
 export interface TokenPayload {
+ 
   // id: number
-  // company_name: string
-  // company_pic: string
+  // first_name: string
+  // last_name: string
   // register_no: string
   // password: string
-  // address: string
-  // company_cert: any
-  // departments: any
-
-  id: number
-  first_name: string
-  last_name: string
-  register_no: string
-  password: string
   // exp: number
   // iat: number
 
+  id: number
+  company_name: string
+  company_pic: string
+  register_no: string
+  password: string
+  company_address: string
+  company_cert: string
+  company_depart: string
+  
 }
 
 @Injectable()

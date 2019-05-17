@@ -20,29 +20,33 @@ users.post('/register', (req, res) => {
     // departments: req.body.departments
 
 
-    first_name: req.body.first_name,
-    last_name: req.body.last_name,
+    company_name: req.body.company_name,
+    company_pic: req.body.company_pic,
     register: req.body.register_no,
     password: req.body.password,
-    created: today
-    }
+    company_address: req.body.company_address,
+    company_cert: req.body.company_cert,
+    company_depart: req.body.company_depart
+
+  }
 
   User.findOne({
     where: {
-      // company_name: req.body.company_name,
-      // company_pic: req.body.company_pic,
+  
+
+      // first_name: req.body.first_name,
+      // last_name: req.body.last_name,
       // register_no: req.body.register_no,
       // password: req.body.password,
-      // address: req.body.address,
-      // company_cert: req.body.company_cert,
-      // departments: req.body.departments
-
-      first_name: req.body.first_name,
-      last_name: req.body.last_name,
-      register_no: req.body.register_no,
+      // created: today
+      company_name: req.body.company_name,
+      company_pic: req.body.company_pic,
+      register: req.body.register_no,
       password: req.body.password,
-      created: today
-        }
+      company_address: req.body.company_address,
+      company_cert: req.body.company_cert,
+      company_depart: req.body.company_depart
+          }
   })
     //TODO bcrypt
     .then(user => {
