@@ -28,7 +28,7 @@ module.exports = db.sequelize.define(
       type: Sequelize.STRING
     },
     company_depart: {
-      type: Sequelize.BOOLEAN
+      type: Sequelize.STRING
     },
   },
   {

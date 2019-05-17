@@ -14,7 +14,7 @@ export interface UserDetails {
   password: string
   company_address: string
   company_cert: string
-  company_depart: boolean
+  company_depart: string
   exp: number;
   iat: number
 
@@ -41,7 +41,7 @@ export interface TokenPayload {
   password: string
   company_address: string
   company_cert: string
-  company_depart: boolean
+  company_depart: string
   
 }
 
