@@ -5,15 +5,23 @@ import { map } from 'rxjs/operators'
 import { Router } from '@angular/router'
 
 export interface UserDetails {
+  // id: number
+  // company_name: string
+  // company_pic: string
+  // register_no: string
+  // password: string
+  // address: string
+  // company_cert : any
+  // departments: any
+  // exp: number
+  // iat: number
+
   id: number
-  company_name: string
-  company_pic: string
+  first_name: string
+  last_name: string
   register_no: string
   password: string
-  address: string
-  company_cert : any
-  departments: any
-  exp: number
+  exp: number;
   iat: number
 }
 
@@ -22,14 +30,22 @@ interface TokenResponse {
 }
 
 export interface TokenPayload {
+  // id: number
+  // company_name: string
+  // company_pic: string
+  // register_no: string
+  // password: string
+  // address: string
+  // company_cert: any
+  // departments: any
+
   id: number
-  company_name: string
-  company_pic: string
+  first_name: string
+  last_name: string
   register_no: string
   password: string
-  address: string
-  company_cert: string
-  departments: string
+  // exp: number
+  // iat: number
 }
 
 @Injectable()
