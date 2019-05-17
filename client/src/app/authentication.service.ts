@@ -4,9 +4,7 @@ import { Observable, of } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { Router } from '@angular/router'
 
-//declaration on types..
 export interface UserDetails {
-
   id: number
   company_name: string
   company_pic: string
@@ -17,7 +15,6 @@ export interface UserDetails {
   company_depart: string
   exp: number;
   iat: number
-
 }
 
 interface TokenResponse {
@@ -25,15 +22,6 @@ interface TokenResponse {
 }
 
 export interface TokenPayload {
- 
-  // id: number
-  // first_name: string
-  // last_name: string
-  // register_no: string
-  // password: string
-  // exp: number
-  // iat: number
-
   id: number
   company_name: string
   company_pic: string

@@ -10,10 +10,9 @@ process.env.SECRET_KEY = 'secret'
 
 users.post('/register', (req, res) => {
   const userData = {
-   
     company_name: req.body.company_name,
     company_pic: req.body.company_pic,
-    register: req.body.register_no,
+    register_no: req.body.register_no,
     password: req.body.password,
     company_address: req.body.company_address,
     company_cert: req.body.company_cert,
@@ -22,15 +21,8 @@ users.post('/register', (req, res) => {
 
   User.findOne({
     where: {
-
-      company_name: req.body.company_name,
-      company_pic: req.body.company_pic,
-      register: req.body.register_no,
-      password: req.body.password,
-      company_address: req.body.company_address,
-      company_cert: req.body.company_cert,
-      company_depart: req.body.company_depart
-          }
+      register_no: req.body.register_no
+      }
   })
     //TODO bcrypt
     .then(user => {

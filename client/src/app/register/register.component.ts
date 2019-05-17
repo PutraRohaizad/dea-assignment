@@ -6,9 +6,7 @@ import { Router } from "@angular/router";
   templateUrl: "./register.component.html"
 })
 export class RegisterComponent {
-
   credentials: TokenPayload = {
-
     id: 0,
     company_name: '',
     company_pic: '',
@@ -31,5 +29,5 @@ export class RegisterComponent {
         console.error(err);
       }
     );
-  }
+    }
 }
